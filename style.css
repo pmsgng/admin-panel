@@ -56,7 +56,7 @@ html,body {
 
 .item-searchbar {
     height: 2rem;
-    width: 256px;
+    width: 16rem;
     background-color: #8055FF;
     margin-right: .5rem;
 
@@ -66,7 +66,7 @@ html,body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 39rem;
+    height: 38rem;
      
 }
 .tableHeader {
@@ -75,7 +75,7 @@ html,body {
 }
 .tableBody {
     background-color: #A8A8FF;
-    height: 33rem;
+    min-height: 32rem
 }
 .tableFooter {
     background-color:#8055FF;
