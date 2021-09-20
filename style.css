@@ -6,10 +6,10 @@ html,body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
     padding-right: 3rem;
     padding-left: 3rem;
     height: 100%;
+    
 
 }
 .pageHeader {
@@ -20,6 +20,7 @@ html,body {
     align-items: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    
 }
 .pageHeader__text {
     font-family: 'Ubuntu', sans-serif;
