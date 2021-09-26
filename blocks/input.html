@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./unput.css">
+    <link rel="stylesheet" href="../reset.css">
+    <title>Input</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="input">
+
+            <div class="input__tandem">
+                <div class="input__text">Дата и время заказа</div>
+                <div class="input__box input__box_empty">
+                    <input type="text" placeholder="Введите" class="input__main input__main_placeholder">
+                    <button class="input__button">
+                        <div class="input__icon"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="input__tandem">
+                <div class="input__text">Дата и время заказа</div>
+                <div class="input__box input__box_incorrect">
+                    <input type="text" value="06.12.2021" class="input__main">
+                    <button class="input__button">
+                        <div class="input__icon input__icon_x"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="input__tandem">
+                <div class="input__text">Дата и время заказа</div>
+                <div class="input__box input__box_disabled">
+                    <input type="text" value="06.12.2021" class="input__main">
+                    <button class="input__button">
+                        <div class="input__icon input__icon_locked"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
