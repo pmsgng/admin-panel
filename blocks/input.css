@@ -21,7 +21,7 @@ body {
     border-radius: 0.25rem;
     padding: 3rem 3rem 2.5rem 3rem;
 }
-.input__tandem {
+.input__group {
     display: flex;
     flex-direction: column;
     align-items: start;
