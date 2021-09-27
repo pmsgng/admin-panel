@@ -28,7 +28,6 @@ body {
     padding: 0.5rem 0rem;
 }
 .input__text {
-    height: 1rem;
     font-size: 13px;
     line-height: 1rem;
     margin-bottom: 0.5rem;
@@ -45,8 +44,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #459DF5;
 }
-.input__box_empty {
-}
+
 .input__box_incorrect{
     border: 1px solid #F53152;
 
