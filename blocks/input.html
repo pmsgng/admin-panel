@@ -11,36 +11,42 @@
 <body>
     <div class="container">
         <div class="input">
-
-            <div class="input__group">
-                <div class="input__text">Дата и время заказа</div>
-                <div class="input__box input__box_empty">
-                    <input type="text" placeholder="Введите" class="input__main input__main_placeholder">
-                    <button class="input__button">
-                        <div class="input__icon"></div>
-                    </button>
+            <form action="#" class="imput__form">
+                <div class="input__group">
+                    <label for="date" class="input__text">Дата и время заказа</label>
+                    <div class="input__box input__box_empty">
+                        <input id="date" type="text" placeholder="Введите" class="input__main input__main_placeholder">
+                        <button class="input__button">
+                            <div class="input__icon"></div>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </form>
             
-            <div class="input__group">
-                <div class="input__text">Дата и время заказа</div>
-                <div class="input__box input__box_incorrect">
-                    <input type="text" placeholder="Введите" value="06.12.2021" class="input__main input__main_placeholder">
-                    <button class="input__button">
-                        <div class="input__icon input__icon_x"></div>
-                    </button>
+            <form action="#" class="imput__form">
+                <div class="input__group">
+                    <label for="date-incorrect" class="input__text">Дата и время заказа</label>
+                    <div class="input__box input__box_incorrect">
+                        <input id="date-incorrect" type="text" placeholder="Введите" value="06.12.2021" class="input__main input__main_placeholder">
+                        <button class="input__button">
+                            <div class="input__icon input__icon_x"></div>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </form>
 
-            <div class="input__group">
-                <div class="input__text">Дата и время заказа</div>
-                <div class="input__box input__box_disabled">
-                    <input type="text" value="06.12.2021" class="input__main">
-                    <button class="input__button">
-                        <div class="input__icon input__icon_locked"></div>
-                    </button>
+            <form action="#" class="imput__form">
+                <div class="input__group">
+                    <label for="date-disabled" class="input__text">Дата и время заказа</label>
+                    <div class="input__box input__box_disabled">
+                        <input id="date-disabled" type="text" value="06.12.2021" class="input__main">
+                        <button class="input__button">
+                            <div class="input__icon input__icon_locked"></div>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </form>
+
         </div>
     </div>
 </body>

@@ -21,6 +21,12 @@ body {
     border-radius: 0.25rem;
     padding: 3rem 3rem 2.5rem 3rem;
 }
+.input__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .input__group {
     display: flex;
     flex-direction: column;
@@ -31,7 +37,6 @@ body {
     font-size: 13px;
     line-height: 1rem;
     margin-bottom: 0.5rem;
-    
 }
 .input__box {
     display: flex;
@@ -47,7 +52,6 @@ body {
 
 .input__box_incorrect{
     border: 1px solid #F53152;
-
 }
 .input__box_disabled{
     background: #BAD8F5;
@@ -60,7 +64,6 @@ body {
     background-color: inherit;
     color: inherit;
     height: 1rem;
-    
 }
 .input__main:focus {
     outline: 0;
@@ -80,27 +83,21 @@ body {
     overflow: hidden;
     width: 1.5rem;
     height: 1.5rem;
-
 }
 .input__icon {
     width: 1.5rem;
     height: 1.5rem;
     background-repeat: no-repeat;
     background: center;
-
-
 }
 .input__icon_x {
     background-image: url(../icons/x-medium.svg);
     width: 1rem;
     height: 1rem;
-
-
 }
 .input__icon_locked {
     background-image: url(../icons/locked.svg);
     width: 1rem;
     height: 1rem;
     background-repeat: no-repeat;
- 
 }
