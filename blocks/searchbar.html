@@ -4,41 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./searchbar.css">
+    <title>Searchbar component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
-    <title>Searchbar</title>
+    <link rel="stylesheet" href="./searchbar.css">
 </head>
 <body>
-    <div class="wrapper">
+    <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        <symbol id="incorrect" viewBox="0 0 16 16">
+            <path id="incorrect" fill="none" d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5"/>
+        </symbol>
+        
+        <symbol id="search" viewBox="0 0 16 16">
+        <path fill="none" d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" />
+        </symbol>
+    </svg>
 
+    <div class="container">
         <div class="searchbar">
 
-            <div class="searchbar__empty">
-                <button class="searchbar__button-icon-wrap">
-                    <div class="searchbar__icon"></div>
-                </button>
+            <form class="searchbar__form">
+                <label class="searchbar__group">
+                    <div class="searchbar__field searchbar__field_empty">
+                        <div class="searchbar__search-area">
+                            <button class="searchbar__button">
+                                <svg class="searchbar__icon searchbar__icon_active">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                            <input class="searchbar__area" placeholder="Номер заказа или ФИО">  
+                        </div>
+                        <button class="searchbar__button searchbar__button_end-line">
+                            <svg class="searchbar__icon">
+                                <use xlink:href="#incorrect"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </label>
+            </form>
 
-                <div class="searchbar__input-wrap">
-                    <input type="text" placeholder="Номер заказа и ФИО" class="searchbar__input">
-                </div>
-            </div>
-        </div>
+            <form class="searchbar__form">
+                <label class="searchbar__group">
+                    <div class="searchbar__field searchbar__field_active">
+                        <div class="searchbar__search-area">
+                            <button class="searchbar__button">
+                                <svg class="searchbar__icon searchbar__icon_active">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                            <input class="searchbar__area" placeholder="50744">  
+                        </div>
+                        <button class="searchbar__button searchbar__button_end-line">
+                            <svg class="searchbar__icon searchbar__icon_incorrect">
+                                <use xlink:href="#incorrect"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </label>
+            </form>
 
-        <div class="searchbar__filled">
-            <button class="searchbar__icon-wrap">
-                <div class="searchbar__icon"></div>
-            </button>
-
-            <div class="searchbar__input-wrap">
-                <input type="text" value="50744" placeholder="Номер заказа или ФИО">
-            </div>
-            
-            <button class="searchbar__button-x-icon-wrap">
-                <div class="searchbar__icon-x"></div>
-            </button>
         </div>
     </div>
-
-    
 </body>
 </html>
