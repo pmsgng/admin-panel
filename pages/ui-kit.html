@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ui-kit</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./ui-kit.css">
     <link rel="stylesheet" href="./input.css">
     <link rel="stylesheet" href="./searchbar.css">
     <link rel="stylesheet" href="./checkbox.css">
     <link rel="stylesheet" href="./radio.css">
+    
 </head>
 <body>
       	
@@ -41,9 +44,160 @@
     </svg>
 
 
-    <div class="container-ui-kit">
+    <div class="ui-kit__container">
+        <div class="ui-kit__wrapper-input">
+            <div class="input">
+
+                <form class="input__form">
+                    <div class="input__group">
+                        <label class="input__control">
+                            <div class="input__field-name">Дата и время заказа</div>
+                            <div class="input__field input__field_empty">
+                                <input class="input__area" placeholder="Введите">
+                                <button class="input__button">
+                                    <svg class="input__icon">
+                                        <use xlink:href="#incorrect"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>  
+                    </div>
+                </form>
+
+                <form class="input__form">
+                    <div class="input__group">
+                        <label class="input__control">
+                            <div class="input__field-name">Дата и время заказа</div>
+                            <div class="input__field input__field_incorrect">
+                                <input class="input__area" value="06.12.2021" placeholder="Введите">
+                                <button class="input__button">
+                                    <svg class="input__icon input__icon_incorrect">
+                                        <use xlink:href="#incorrect"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+
+                <form class="input__form">
+                    <div class="input__group">
+                        <label class="input__control">
+                            <div class="input__field-name">Дата и время заказа</div>
+                            <div class="input__field input__field_disabled">
+                                <input class="input__area" value="06.12.2021" placeholder="Введите">
+                                <button class="input__button">
+                                    <svg class="input__icon input__icon_disabled">
+                                        <use xlink:href="#disabled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+            
+            </div>
+        </div>
+
+    
 
 
-    </div>
+        <div class="ui-kit__wrapper-searchbar-checkbox">
+            <div class="ui-kit__wrapper-searchbar">
+                <div class="searchbar">
+
+                    <form class="searchbar__form">
+                        <label class="searchbar__group">
+                            <div class="searchbar__field searchbar__field_empty">
+                                <div class="searchbar__search-area">
+                                    <button class="searchbar__button">
+                                        <svg class="searchbar__icon searchbar__icon_active">
+                                            <use xlink:href="#search"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="searchbar__area" placeholder="Номер заказа или ФИО">  
+                                </div>
+                                <button class="searchbar__button searchbar__button_end-line">
+                                    <svg class="searchbar__icon">
+                                        <use xlink:href="#incorrect"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+                    </form>
+
+                    <form class="searchbar__form">
+                        <label class="searchbar__group">
+                            <div class="searchbar__field searchbar__field_active">
+                                <div class="searchbar__search-area">
+                                    <button class="searchbar__button">
+                                        <svg class="searchbar__icon searchbar__icon_active">
+                                            <use xlink:href="#search"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="searchbar__area" value="50744" placeholder="Номер заказа или ФИО">  
+                                </div>
+                                <button class="searchbar__button searchbar__button_end-line">
+                                    <svg class="searchbar__icon searchbar__icon_incorrect">
+                                        <use xlink:href="#incorrect"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="ui-kit__wrapper-checkbox">
+                <div class="checkbox">
+
+                        <form class="checkbox__form">
+                            <label class="checkbox__control">
+                                <div class="checkbox__group">
+                                    <input type="checkbox" class="checkbox__area">
+                                    <svg class="checkbox__icon">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </div>                    
+                            </label>  
+                        </form>
+
+                        <form class="checkbox__form checkbox__form_last">
+                            <label class="checkbox__control">
+                                <div class="checkbox__group">
+                                    <input type="checkbox" class="checkbox__area checkbox__area_last" checked>
+                                    <svg class="checkbox__icon">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </div>                    
+                            </label>  
+                        </form>
+                    </div>
+
+
+                
+                    <div class="radio">
+
+                        <form class="radio__form">
+                            <label class="radio__control">
+                                <input type="radio" class="radio__area" name="admin-panel-checkbox" value="1">                 
+                            </label>
+                            <label class="radio__control radio__control_last">
+                                <input type="radio" class="radio__area" name="admin-panel-checkbox" value="2" checked>                
+                            </label>
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+        
 </body>
 </html>
