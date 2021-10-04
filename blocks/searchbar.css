@@ -43,6 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+
 }
 
 .searchbar__form:last-child {
@@ -97,10 +98,6 @@ body {
 
 .searchbar__area::placeholder {
     color: var(--background-searchbar-light);
-}
-
-.searchbar__field_active .searchbar__area::placeholder {
-    color: var(--background-searchbar-dark);
 }
 
 .searchbar__button {
