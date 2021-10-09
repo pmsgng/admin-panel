@@ -16,14 +16,6 @@ body {
     display: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    height: 100vh;
-}
 
 .searchbar {
     display: flex;
@@ -75,6 +67,7 @@ body {
 .searchbar__search-area {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .searchbar__field_empty {
@@ -94,12 +87,12 @@ body {
     background-color: inherit;
     outline: 0;
     color: var(--background-searchbar-dark);
+    width: 100%;
 }
 
 .searchbar__area::placeholder {
     color: var(--background-searchbar-light);
 }
-
 .searchbar__button {
     padding: 0 0.5rem 0 0;
     border: none;
@@ -108,10 +101,19 @@ body {
     background-color: transparent;
     cursor: pointer;
 }
+.searchbar__search-pic {
+    padding: 0 0.5rem 0 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
 
-.searchbar__button_end-line {
+.searchbar__button:last-child {
     padding: 0;
 }
+
 
 .searchbar__icon {
     display: none;

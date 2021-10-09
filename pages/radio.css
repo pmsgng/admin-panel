@@ -11,13 +11,7 @@ body {
     background-color: var(--background-checkbox-main);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    height: 100vh;
-}
+
 
 .radio {
     display: flex;
@@ -45,7 +39,7 @@ body {
     cursor: pointer;
 }
 
-.radio__control_last {
+.radio__control:last-child {
     margin: 0;
 }
 

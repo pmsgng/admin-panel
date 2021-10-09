@@ -17,14 +17,7 @@ body {
 .svg {
     display: none;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    height: 100vh;
-}
+
 
 .input {
     display: flex;
@@ -100,16 +93,13 @@ body {
     background-color: inherit;
     outline: 0;
     color: inherit;
+    width: 100%;
 }
 
 .input__area::placeholder {
     color: var(--background-input-light);
 }
 
-
-.input__field_disabled .input__area::placeholder {
-    color: var(--background-input-dark);
-} 
 
 .input__icon-area {
     display: flex;
