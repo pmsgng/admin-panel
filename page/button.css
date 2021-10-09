@@ -46,7 +46,7 @@ body {
     display: flex;
     width: 0.75rem;
     height: 0.75rem;
-    stroke: var(--background-buttons-stroke-middle);
+    stroke: var(--background-buttons-white);
     margin-right: 0.5rem;
     flex: 0 0 auto;
 }
@@ -133,4 +133,10 @@ body {
 }
 .container-buttons__button-pic-text_third-column > .container-buttons__icon {
     stroke: #000;
+}
+.container-buttons__button-pic-text_second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+.container-buttons__button-pic_second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
 }
