@@ -20,7 +20,6 @@ body {
     width: 6.5rem;
     height: 4rem;
     border: 0.0625rem dashed var(--background-checkbox-stroke-middle);
-    box-sizing: border-box;
     border-radius: 0.25rem;
 }
 
