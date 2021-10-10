@@ -13,6 +13,8 @@ body {
 }
 .container-buttons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .container-buttons__buttons-box {
     display: flex;
@@ -21,6 +23,7 @@ body {
 .container-buttons__form-box {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem 1rem;
 }
 .container-buttons__button-pic-text {
     display: flex;
@@ -44,8 +47,8 @@ body {
 }
 .container-buttons__icon {
     display: flex;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1rem;
+    height: 1rem;
     stroke: var(--background-buttons-white);
     margin-right: 0.5rem;
     flex: 0 0 auto;
@@ -60,6 +63,7 @@ body {
     line-height: 1rem;
     font-size: 0.8125rem;
     color: var(--background-buttons-white);
+    white-space: nowrap;
 }
 .container-buttons__button-text {
     display: flex;
@@ -138,5 +142,54 @@ body {
     stroke: var(--background-buttons-medium);
 }
 .container-buttons__button-pic_second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+
+.container-buttons__form-box_second-row > .container-buttons__button-pic-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.container-buttons__form-box_second-row > .container-buttons__button-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 1rem;
+    
+}
+.container-buttons__form-box_second-row > .container-buttons__button-pic_second-row {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.container-buttons__form-box_second-row-second-column > .container-buttons__button-pic-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: transparent;
+    
+}
+
+.container-buttons__button-pic-text_second-row-second-column > .container-buttons__text {
+    color: var(--background-buttons-medium);
+}
+.container-buttons__button-pic-text_second-row-second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+.container-buttons__form-box_second-row-second-column > .container-buttons__button-text {
+    background-color: transparent;
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.container-buttons__form-box_second-row-second-column button .container-buttons__text {
+    color: var(--background-buttons-medium);
+}
+
+.container-buttons__form-box_second-row-second-column button.container-buttons__button-pic {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+}
+.container-buttons__form-box_second-row-second-column button svg.container-buttons__icon {
     stroke: var(--background-buttons-medium);
 }
