@@ -107,7 +107,6 @@ body {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .searchbar__button:last-child {
