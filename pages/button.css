@@ -18,7 +18,7 @@ body {
     border: 0.0625rem var(--background-buttons-stroke-middle) dashed;
     width: 36rem;
     height: 23.5rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .container-buttons__buttons-box {
