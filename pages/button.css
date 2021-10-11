@@ -15,10 +15,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 0.0625rem var(--background-buttons-stroke-middle) dashed;
+    width: 36rem;
+    height: 23.5rem;
 }
+
 .container-buttons__buttons-box {
     display: flex;
-    margin: 1rem;
+    align-items: flex-start;
 }
 .container-buttons__form-box {
     display: flex;
