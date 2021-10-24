@@ -67,7 +67,7 @@ body {
     box-shadow: 0 0 0.5rem var(--background-input-light);
 }
 
-.input__field_empty {
+.input__field_empty-field {
     border-color: var(--background-input-medium);
 }
 

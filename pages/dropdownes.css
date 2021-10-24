@@ -25,7 +25,7 @@ body {
     padding: 3rem;
     height: 100vh;
 }
-.dropdownes__wrap {
+.dropdowns__wrap {
     display: flex;
     flex-direction: column;
     width: 42rem;
@@ -34,12 +34,12 @@ body {
     border: 0.0625rem dashed var(--background-dropdowns-stroke-middle);
     border-radius: 0.25rem;
 }
-.dropdownes__row {
+.dropdowns__row {
     display: flex;
     margin-bottom: 6rem;
    
 }
-.dropdownes__column {
+.dropdowns__column {
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
@@ -48,7 +48,7 @@ body {
     margin: 0;
 }
 
-.dropdownes__form {
+.dropdowns__form {
     display: flex;
     flex-direction: column;
     width: 10rem;
@@ -59,13 +59,13 @@ body {
     box-shadow: 0 0.5rem 2rem var(--background-dropdowns-shadow), 0 0.25rem 0.5rem var(--background-dropdowns-shadow), 0 0.125rem 0.125rem var(--background-dropdowns-shadow);
 
 }
-.dropdownes__list {
+.dropdowns__list {
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
-.dropdownes__item {
+.dropdowns__item {
     display: flex;
     width: 100%;
     height: 2rem;
@@ -74,26 +74,26 @@ body {
     background-color: var(--background-dropdowns-white);
 
 }
-.dropdownes__item:hover {
+.dropdowns__item:hover {
     background-color: var(--background-dropdowns-light);
     border-radius: 0.25rem;
 }
-.dropdownes__item:active {
+.dropdowns__item:active {
     background-color: var(--background-dropdowns-medium);
 }
-.dropdownes__control {
+.dropdowns__control {
     display: flex;
     cursor: pointer;
     width: 100%;
 
 }
-.dropdownes__checkbox-pair {
+.dropdowns__checkbox-pair {
     position: relative;
     display: flex;
     align-items: center;
 
 }
-.dropdownes__checkbox {
+.dropdowns__checkbox {
     appearance: none;
     width: 1rem;
     height: 1rem;
@@ -102,24 +102,24 @@ body {
     border-radius: 0.125rem;
     background-color: var(--background-dropdowns-white);
 }
-.dropdownes__checkbox:checked {
+.dropdowns__checkbox:checked {
 	background-color: var( --background-dropdowns-medium);
     border-color: var( --background-dropdowns-medium);
 }
-.dropdownes__checkbox:active, 
-.dropdownes__checkbox:checked:active {
+.dropdowns__checkbox:active, 
+.dropdowns__checkbox:checked:active {
 	box-shadow: 0 0 0.125rem var(--background-dropdowns-medium), inset 0 0 0.125rem var(--background-dropdowns-medium);
 }
 
-.dropdownes__checkbox:focus {
+.dropdowns__checkbox:focus {
     outline-color: var(--background-dropdowns-light);
 }
 
-.dropdownes__checkbox:checked + .dropdownes__checkbox-icon {
+.dropdowns__checkbox:checked + .dropdowns__checkbox-icon {
     opacity: 1;
 }
 
-.dropdownes__checkbox-icon {
+.dropdowns__checkbox-icon {
     position: absolute;
     width: 1rem;
     height: 1rem;
@@ -127,7 +127,7 @@ body {
     opacity: 0;
     transition: opacity 0.25s ease-in;
 }
-.dropdownes__item-text {
+.dropdowns__item-text {
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -135,15 +135,15 @@ body {
     font-size: 0.8125rem; 
 
 }
-.dropdownes__item-radio:checked + .dropdownes__item-text {
+.dropdowns__item-radio:checked + .dropdowns__item-text {
     color: var(--background-dropdowns-medium);
 }
 
-.dropdownes__item-radio {
+.dropdowns__item-radio {
     display: none;
 }
 
-.dropdownes__form-input {
+.dropdowns__form-input {
     display: flex;
     flex-direction: column;
     width: 10rem;
@@ -154,17 +154,17 @@ body {
     box-shadow: 0 0.5rem 2rem var(--background-dropdowns-shadow), 0 0.25rem 0.5rem var(--background-dropdowns-shadow), 0 0.125rem 0.125rem var(--background-dropdowns-shadow);
 }
 
-.dropdownes__input-control {
+.dropdowns__input-control {
     display: flex;
     flex-direction: column;
 }
-.dropdownes__input-title-text {
+.dropdowns__input-title-text {
     display: flex;
     line-height: 1rem;
     font-size: 0.8125rem;
     margin-bottom: 0.5rem;
 }
-.dropdownes__input-wrap {
+.dropdowns__input-wrap {
     display: flex;
     align-items: center;
     width: 100%;
@@ -176,15 +176,15 @@ body {
     background-color: var(--background-dropdowns-white);
 }
 
-.dropdownes__input-wrap:focus-within {
+.dropdowns__input-wrap:focus-within {
     box-shadow: 0 0 0.5rem var(--background-dropdowns-light);
 }
 
-.dropdownes__input-wrap:active {
+.dropdowns__input-wrap:active {
     border-color: var(--background-dropdowns-medium);
 }
 
-.dropdownes__input {
+.dropdowns__input {
     display: flex;
     border: 0;
     width: 100%;
@@ -194,11 +194,11 @@ body {
     outline: 0;
 }
 
-.dropdownes__input::placeholder {
+.dropdowns__input::placeholder {
     color: var(--background-dropdowns-light);
 }
 
-.dropdownes__form-button-delete {
+.dropdowns__form-button-delete {
     display: flex;
     flex-direction: column;
     width: 10rem;
@@ -208,7 +208,7 @@ body {
     background-color: var(--background-dropdowns-white);
     box-shadow: 0 0.5rem 2rem var(--background-dropdowns-shadow), 0 0.25rem 0.5rem var(--background-dropdowns-shadow), 0 0.125rem 0.125rem var(--background-dropdowns-shadow);
 }
-.dropdownes__form-button-switch {
+.dropdowns__form-button-switch {
     display: flex;
     flex-direction: column;
     width: 10rem;
@@ -218,7 +218,7 @@ body {
     background-color: var(--background-dropdowns-white);
     box-shadow: 0 0.5rem 2rem var(--background-dropdowns-shadow), 0 0.25rem 0.5rem var(--background-dropdowns-shadow), 0 0.125rem 0.125rem var(--background-dropdowns-shadow);
 }
-.dropdownes__button-title-text {
+.dropdowns__button-title-text {
     display: flex;
     width: 3.5rem;
     height: 1rem;
@@ -227,7 +227,7 @@ body {
     white-space: nowrap;
     margin-bottom: 0.75rem;
 }
-.dropdownes__button {
+.dropdowns__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,21 +242,21 @@ body {
     cursor: pointer;
 }
 
-.dropdownes__button:last-child {
+.dropdowns__button:last-child {
     margin: 0;
 }
 
-.dropdownes__button:hover {
+.dropdowns__button:hover {
     box-shadow: 0 0 0.25rem var(--background-dropdowns-medium);
 }
 
-.dropdownes__button:focus,
-.dropdownes__button:active {
+.dropdowns__button:focus,
+.dropdowns__button:active {
     outline: none;
     box-shadow: 0 0 0.25rem var(--background-dropdowns-medium);
     background-color: var(--background-dropdowns-medium-dark);
 }
-.dropdownes__button-text {
+.dropdowns__button-text {
     display: flex;
     width: 3.5rem;
     height: 1rem;
@@ -265,7 +265,7 @@ body {
 
 }
 
-.dropdownes__icon {
+.dropdowns__icon {
     display: flex;
     width: 1rem;
     height: 1rem;
@@ -274,22 +274,22 @@ body {
     transition-duration: 0.4s;
 }
 
-.dropdownes__button_transparent {
+.dropdowns__button_transparent {
     color: var(--background-dropdowns-medium);
     background-color: transparent;
 }
 
-.dropdownes__button_transparent:hover {
+.dropdowns__button_transparent:hover {
     background-color: var(--background-dropdowns-light);
     color: var(--background-dropdowns-dark);
     box-shadow: none;
 }
 
-.dropdownes__button_transparent:active {
+.dropdowns__button_transparent:active {
     box-shadow: 0 0 0.25rem var(--background-dropdowns-light);
     background-color: var(--background-dropdowns-medium);
 }
 
-.dropdownes__icon_blue {
+.dropdowns__icon_blue {
     fill: var(--background-dropdowns-medium);
 }
