@@ -1,0 +1,200 @@
+
+:root {
+    --background-buttons-dark: #000;
+    --background-buttons-white: #fff;
+    --background-buttons-light: #BAD8F5;
+    --background-buttons-medium: #459DF5;
+    --background-buttons-stroke-middle: #8055FF;
+    --background-buttons-main: #E5E5E5;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--background-buttons-main);
+}
+.container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0.0625rem var(--background-buttons-stroke-middle) dashed;
+    width: 36rem;
+    height: 23.5rem;
+    margin-bottom: 2rem;
+}
+
+.container-buttons__buttons-box {
+    display: flex;
+    align-items: flex-start;
+}
+.container-buttons__form-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+.container-buttons__button-pic-text {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 2rem;
+    background-color: var(--background-buttons-medium);
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    color: var(--background-buttons-white);
+    padding: 0.5rem 1rem;
+}
+.container-buttons__button-pic-text:hover {
+    box-shadow: 0 0 0.25rem var(--background-buttons-light);
+}
+.container-buttons__button-pic-text:active {
+    outline: none;
+    box-shadow: 0 0 0.25rem var(--background-buttons-medium);
+}
+.container-buttons__icon {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    stroke: var(--background-buttons-white);
+    margin-right: 0.5rem;
+    flex: 0 0 auto;
+}
+.container-buttons__icon:last-child {
+    margin-right: 0rem;
+    flex: 0 0 auto;
+}
+.container-buttons__text {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.8125rem;
+    color: var(--background-buttons-white);
+    white-space: nowrap;
+}
+.container-buttons__button-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-buttons-medium);
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+}
+.container-buttons__button-text:hover {
+    box-shadow: 0 0 0.25rem var(--background-buttons-light);
+}
+.container-buttons__button-text:active {
+    outline: none;
+    box-shadow: 0 0 0.25rem var(--background-buttons-medium);
+}
+.container-buttons__button-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-buttons-medium);
+    margin: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+.container-buttons__button-pic:hover {
+    box-shadow: 0 0 0.25rem var(--background-buttons-light);
+}
+.container-buttons__button-pic:active {
+    outline: none;
+    box-shadow: 0 0 0.25rem var(--background-buttons-medium);
+}
+.container-buttons__button-pic-text_second-column {
+    background-color: transparent;
+    color: var(--background-buttons-medium)
+}
+
+.container-buttons__button-text_second-column {
+    background-color: transparent;
+    color: var(--background-buttons-medium)
+}
+
+.container-buttons__button-pic_second-column {
+    background-color: transparent;
+    color: var(--background-buttons-medium)
+}
+.container-buttons__text_second-column {
+    color: var(--background-buttons-medium);
+}
+.container-buttons__button-pic-text_third-column {
+    pointer-events: none;
+    background-color: transparent;
+    color: var(--background-buttons-dark);
+    stroke: var(--background-buttons-dark);
+}
+.container-buttons__button-text_third-column {
+    pointer-events: none;
+    background-color: transparent;
+    color: var(--background-buttons-dark);
+}
+.container-buttons__text_third-column {
+    color: var(--background-buttons-dark)
+}
+.container-buttons__button-pic-text_third-column > .container-buttons__icon {
+    stroke: #000;
+}
+.container-buttons__button-pic-text_second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+.container-buttons__button-pic_second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+
+.container-buttons__form-box_second-row > .container-buttons__button-pic-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.container-buttons__form-box_second-row > .container-buttons__button-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 1rem;
+    
+}
+.container-buttons__form-box_second-row > .container-buttons__button-pic_second-row {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.container-buttons__form-box_second-row-second-column > .container-buttons__button-pic-text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: transparent;
+    
+}
+
+.container-buttons__button-pic-text_second-row-second-column > .container-buttons__text {
+    color: var(--background-buttons-medium);
+}
+.container-buttons__button-pic-text_second-row-second-column > .container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
+.container-buttons__form-box_second-row-second-column > .container-buttons__button-text {
+    background-color: transparent;
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.container-buttons__form-box_second-row-second-column button .container-buttons__text {
+    color: var(--background-buttons-medium);
+}
+
+.container-buttons__form-box_second-row-second-column button.container-buttons__button-pic {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+}
+.container-buttons__form-box_second-row-second-column button svg.container-buttons__icon {
+    stroke: var(--background-buttons-medium);
+}
