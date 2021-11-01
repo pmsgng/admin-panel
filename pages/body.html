@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./body.css">
     <link rel="stylesheet" href="../reset.css">
     <title>Body</title>
@@ -83,10 +86,373 @@
             </div>
 
             <div class="filter-row">
-                ы
+                
             </div>
 
-            <div class="table"></div>
+            <div class="table">
+                <div class="table__header table-header">
+                    <div class="table-header__checkbox-wrap">
+                        <input type="checkbox" class="table-header__checkbox">
+                    </div>
+                    <div class="table-header__order-number">
+                        <span class="table-header__text">#</span>
+                    </div>
+                    <div class="table-header__order-date">
+                        <span class="table-header__text">Дата</span>
+                        <svg class="table-header__icon">
+                            <use xlink:href="#v_arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="table-header__order-status">
+                        <span class="table-header__text">Статус</span>
+                        <svg class="table-header__icon">
+                            <use xlink:href="#v_arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="table-header__order-position">
+                        <span class="table-header__text">Позиций</span>
+                        <svg class="table-header__icon">
+                            <use xlink:href="#v_arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="table-header__order-sum">
+                        <span class="table-header__text">Сумма</span>
+                        <svg class="table-header__icon">
+                            <use xlink:href="#v_arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="table-header__order-customer">
+                        <span class="table-header__text">ФИО покупателя</span>
+                    </div>
+                </div>
+                <div class="table__body table-body">
+                    <div class="table-body__customer-list">
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">1270989</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">15.02.2021,18:00</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#dot"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отложен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">5</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">101 907 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Черышев Филипп Семёнович</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">2353474</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">12.03.2021,05:15</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#dot"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отложен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">2</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">98 003 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Филиппов Степан Васильевич</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">1103397</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">03.02.2021,08:04</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#dot"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отложен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">5</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">3 800 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Тихонова Алина Давидовна</span>
+                            </div>
+                        </div>
+
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">6924662</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">21.01.2021,13:32</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Выполнен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">1</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">5 700 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Александрова Юлия Никитична</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">2200086</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">19.01.2021,10:28</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status ">
+                                    <use xlink:href="#abort"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отменен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">-</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">-</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Андрей</span>
+                            </div>
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">2842064</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">01.04.2021,12:12</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#dot"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отложен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">1</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">10 500 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Судакова Анастасия Ильинична</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">1730071</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">17.12.2020,22:45</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Выполнен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">1</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">1 399 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Зверева Арина Николаевна</span>
+                            </div>
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">7987376</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">07.12.2020,08:57</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Выполнен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">3</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">117 810 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Карташов Максим Кириллович</span>
+                            </div>
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">1373265</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">15.11.2020,14:26</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Выполнен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">1</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">17 008 ₽</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">Васильев Вадим Данилович</span>
+                            </div>
+                        </div>
+
+                        <div class="table-body__order-row">
+                            <div class="table-body__checkbox-wrap">
+                                <input type="checkbox" class="table-body__checkbox">
+                            </div>
+                            <div class="table-body__order-num-wrap">
+                                <span class="table-body__cell-text">1373265</span>
+                            </div>
+                            <div class="table-body__date-wrap">
+                                <span class="table-body__cell-text">07.11.2020,14:26</span>
+                            </div>
+                            <div class="table-body__order-status-wrap">
+                                <svg class="table-body__icon-status">
+                                    <use xlink:href="#abort"></use>
+                                </svg>
+                                <span class="table-body__cell-text">Отменен</span>
+                            </div>
+                            <div class="table-body__positions-sum">
+                                <span class="table-body__cell-text">-</span>
+                            </div>
+                            <div class="table-body__order-sum">
+                                <span class="table-body__cell-text">-</span>
+                            </div>
+                            <div class="table-body__customer-name">
+                                <span class="table-body__cell-text">София</span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="table__footer table-footer">
+                    <form class="table-footer__action">
+                        <span class="table-footer__text">Выбрано записей: 5</span>
+                        <button class="table-footer__button">
+                            <svg class="table-footer__icon">
+                                <use xlink:href="#pencil"></use>
+                            </svg>
+                            <span class="table__footer-button-text">Изменить статус</span>
+                        </button>
+                        <button class="table-footer__button table-footer__button_red">
+                            <svg class="table-footer__icon">
+                                <use xlink:href="#bin"></use>
+                            </svg>
+                            <span class="table-footer__button-text">Удалить</span>
+                        </button>
+                    </form>
+                    <form class="table-footer__dropdown">
+                        <span class="table-footer__dropdown-title">Удалить n записей?</span>
+                        <button class="table-footer__dropdown-button">
+                            <span class="table-footer__dropdown-button-text">Удалить</span>
+                        </button>
+                        <button class="table-footer__dropdown-button">
+                            <span class="table-footer__dropdown-button-text">Отмена</span>
+                        </button>
+                    </form>
+    
+                    <div class="table-footer__pagination">
+                        <form class="table-footer__pagination-form">
+                            <button class="table-footer__button">
+                                <span class="table-footer__button-text">1</span>
+                            </button>
+                            <button class="table-footer__button">
+                                <span class="table__footer-button-text">2</span>
+                            </button>
+                            <button class="table-footer__button">
+                                <span class="table__footer-button-text">3</span>
+                            </button>
+                            <span class="table-footer__pagination-continue">…</span>
+                            <button class="table-footer__button">
+                                <span class="table-footer__button-text">18</span>
+                            </button>
+                        </form>
+                            <button class="table-footer__button">
+                                <span class="table-footer__button-text">#</span>
+                            </button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
