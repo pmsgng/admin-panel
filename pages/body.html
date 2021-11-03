@@ -86,7 +86,201 @@
             </div>
 
             <div class="filter-row">
+                <div class="filter-row__search-row">
+                    <form class="filter-row__form">
+
+                        <label class="filter-row__searchbar">
+                            <div class="searchbar">
+                                <div class="searchbar__search-area">
+                                    <svg class="searchbar__icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    <input class="searchbar__input-field" placeholder="Номер заказа или ФИО">  
+                                </div>
+                                <button class="searchbar__button searchbar__button_end-line">
+                                    <svg class="searchbar__icon">
+                                        <use xlink:href="#incorrect"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+
+
+                        <button class="filter-row__button">
+                            <svg class="filter-row__icon">
+                                <use xlink:href="#filter"></use>
+                            </svg>
+                            <span class="filter-row__text-button">Фильтры</span>
+                        </button>
+
+                        <button class="filter-row__button-reset">
+                            <span class="filter-row__text-button">Сбросить фильтры</span>
+                        </button>
+                    </form>
+
+                    <div class="filter-row__loader">
+                        <svg class="filter-row__icon-loader">
+                            <use xlink:href="#refresh"></use>
+                        </svg>
+                        <span class="filter-row__text-loader">Загрузка</span>
+                    </div>
+                </div>
+            
+                <div class="filter-row__row-inputs">
+                    <form action="#" class="filter-row__form">
+
+                        <div class="filter-row__inputs">
+                            <label for="date" class="filter-row__input-title-text">Дата оформления</label>
+                            <div class="filter-row__inputs-wrap">
+                                <div class="filter-row__input-wrap">
+                                    <span class="filter-row__from-to-text">с</span>
+                                    <input id="date" class="filter-row__input" type="text" placeholder="dd.mm.dddd" value="20.01.2021">
+                                    <button class="filter-row__input-button">
+                                        <svg class="filter-row__input-icon">
+                                            <use xlink:href="#incorrect"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="filter-row__input-wrap">
+                                    <span class="filter-row__from-to-text">по</span>
+                                    <input class="filter-row__input" type="text" placeholder="dd.mm.dddd">
+                                    <button class="filter-row__input-button filter-row__input-button_disabled">
+                                        <svg class="filter-row__input-icon">
+                                            <use xlink:href="#incorrect"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-row__inputs">
+                            <label for="status" class="filter-row__input-title-text">Статус заказа</label>
+                            <div class="filter-row__input-wrap">
+                                <input id="status" class="filter-row__input filter-row__input_dropdown" type="text" placeholder="Выберите статус" value="Любой">
+                                <button class="filter-row__input-button">
+                                    <svg class="filter-row__input-icon">
+                                        <use xlink:href="#v_arrow"></use>
+                                    </svg>
+                                </button>
+
+                                <div class="dropdowns__column">
+                                    <form class="dropdowns__form">
+                                        <ul class="dropdowns__list">
                 
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Новый</span>
+                                                </label>
+                                            </li>
+                
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Рассчет</span>
+                                                </label>
+                                            </li>
+                
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Подтверждён</span>
+                                                </label>
+                                            </li>
+                
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Отложен</span>
+                                                </label>
+                                            </li>
+                
+                
+                
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Выполнен</span>
+                                                </label>
+                                            </li>
+                
+                
+                                            <li class="dropdowns__item">
+                                                <label class="dropdowns__control">
+                                                    <div class="dropdowns__checkbox-pair">
+                                                        <input type="checkbox" class="dropdowns__checkbox">
+                                                        <svg class="dropdowns__checkbox-icon">
+                                                            <use xlink:href="#checkmark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="dropdowns__item-text">Отменен</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                
+                                    </form>
+                                </div>
+                
+                            </div>
+                        </div>
+
+                        <div class="filter-row__inputs">
+                            <label for="sum" class="filter-row__input-title-text">Сумма заказа</label>
+                            <div class="filter-row__inputs-wrap">
+                                <div class="filter-row__inputs-wrap">
+                                    <div class="filter-row__input-wrap">
+                                        <span class="filter-row__from-to-text">от</span>
+                                        <input id="sum" class="filter-row__input" type="text" value="5000">
+                                        <button class="filter-row__input-button">
+                                        <svg class="filter-row__input-icon">
+                                            <use xlink:href="#incorrect"></use>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                    <div class="filter-row__input-wrap">
+                                        <span class="filter-row__from-to-text">до</span>
+                                        <input class="filter-row__input" type="text">
+                                        <button class="filter-row__input-button">
+                                            <svg class="filter-row__input-icon">
+                                                <use xlink:href="#incorrect"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-row__form-button">
+                            <button class="filter-row__button">
+                                <span class="filter-row__text-button">Применить</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <div class="table">
@@ -406,41 +600,42 @@
                     </div>
                 </div>
                 <div class="table__footer table-footer">
-                    <form class="table-footer__action">
-                        <span class="table-footer__text">Выбрано записей: 5</span>
-                        <button class="table-footer__button">
-                            <svg class="table-footer__icon">
-                                <use xlink:href="#pencil"></use>
-                            </svg>
-                            <span class="table__footer-button-text">Изменить статус</span>
-                        </button>
-                        <button class="table-footer__button table-footer__button_red">
-                            <svg class="table-footer__icon">
-                                <use xlink:href="#bin"></use>
-                            </svg>
-                            <span class="table-footer__button-text">Удалить</span>
-                        </button>
-                    </form>
-                    <form class="table-footer__dropdown">
-                        <span class="table-footer__dropdown-title">Удалить n записей?</span>
-                        <button class="table-footer__dropdown-button">
-                            <span class="table-footer__dropdown-button-text">Удалить</span>
-                        </button>
-                        <button class="table-footer__dropdown-button">
-                            <span class="table-footer__dropdown-button-text">Отмена</span>
-                        </button>
-                    </form>
-    
+                    <div class="table-footer__buttons-status">
+                        <form class="table-footer__action">
+                            <span class="table-footer__text">Выбрано записей: 5</span>
+                            <button class="table-footer__button">
+                                <svg class="table-footer__icon">
+                                    <use xlink:href="#pencil"></use>
+                                </svg>
+                                <span class="table-footer__button-text">Изменить статус</span>
+                            </button>
+                            <button class="table-footer__button table-footer__button_red">
+                                <svg class="table-footer__icon">
+                                    <use xlink:href="#bin"></use>
+                                </svg>
+                                <span class="table-footer__button-text">Удалить</span>
+                            </button>
+                        </form>
+                        <form class="table-footer__dropdown">
+                            <span class="table-footer__dropdown-title">Удалить n записей?</span>
+                            <button class="table-footer__dropdown-button table-footer__dropdown-button_transparent">
+                                <span class="table-footer__dropdown-button-text">Удалить</span>
+                            </button>
+                            <button class="table-footer__dropdown-button">
+                                <span class="table-footer__dropdown-button-text">Отмена</span>
+                            </button>
+                        </form>
+                    </div>
                     <div class="table-footer__pagination">
                         <form class="table-footer__pagination-form">
                             <button class="table-footer__button">
                                 <span class="table-footer__button-text">1</span>
                             </button>
                             <button class="table-footer__button">
-                                <span class="table__footer-button-text">2</span>
+                                <span class="table-footer__button-text">2</span>
                             </button>
                             <button class="table-footer__button">
-                                <span class="table__footer-button-text">3</span>
+                                <span class="table-footer__button-text">3</span>
                             </button>
                             <span class="table-footer__pagination-continue">…</span>
                             <button class="table-footer__button">
