@@ -566,8 +566,6 @@ body {
     height: 2.5rem;
     padding: 0.75rem 0.5rem;
 }
-.table__footer {
-}
 .table-footer {
     display: flex;
     width: 94rem;
@@ -610,13 +608,26 @@ body {
     font-size: 0.8125rem;
     line-height: 1rem;
     color: var(--background-admin-panel-white);
+    cursor: pointer;
+}
+.table-footer__button:hover {
+    box-shadow: 0 0 1rem 0.1rem var(--background-admin-panel-medium);
+}
+.table-footer__button:active {
+    box-shadow: none;
 }
 .table-footer__button_red {
     width: 5.375rem;
     background: var(--background-admin-panel-red);
     color: var(--background-admin-panel-white);
     position: relative;
-
+    cursor: pointer;
+}
+.table-footer__button_red:hover {
+    box-shadow: 0 0 1rem 0.1rem var(--background-admin-panel-red);
+}
+.table-footer__button_red:active {
+    box-shadow: none;
 }
 .table-footer__dropdown {
     display: flex;
@@ -643,10 +654,18 @@ body {
     background: var(--background-admin-panel-medium);
     border-radius: 0.25rem;
     order: 10;
+    cursor: pointer;
+}
+.table-footer__dropdown-button:hover {
+    box-shadow: 0 0 1rem 0.1rem var(--background-admin-panel-medium);
+}
+.table-footer__dropdown-button:active {
+    box-shadow: none;
 }
 .table-footer__dropdown-button_transparent {
     background: transparent;
     color: var(--background-admin-panel-medium);
+    margin-bottom: 0.5rem;
 }
 .table-footer__dropdown-button-text {
     font-size: 0.8125rem;
