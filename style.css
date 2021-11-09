@@ -12,7 +12,7 @@ html,body {
     height: 100%;
 
 }
-.pageHeader {
+.page-header {
     height: 2rem;
     background-color: #A8A8FF;
     display: flex;
@@ -21,7 +21,7 @@ html,body {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-.pageHeader__text {
+.page-header__text {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -30,7 +30,7 @@ html,body {
     letter-spacing: -0.2px;
     color: #8055FF;
 }
-.filterRow {
+.item-row {
     height: 3rem;
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@ html,body {
     margin-bottom: 2rem;
     
 }
-.itemGroup {
+.item-row__group {
     display: flex;
     justify-content: space-around;    
     align-items: center;
@@ -49,14 +49,14 @@ html,body {
 
 }
 
-.item {
+.item-row__item {
     height: 2rem;
     width: 2rem;
     background-color: #8055FF;
     padding: 0.5rem;
 }
 
-.item-searchbar {
+.item-row__item_searchbar {
     height: 2rem;
     width: 16rem;
     background-color: #8055FF;
@@ -64,22 +64,22 @@ html,body {
 
 }
 
-.tableWrapper {
+.table-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
      
 }
-.tableHeader {
+.table-wrap__header {
     background-color: #8055FF;
     height: 3rem;
 }
-.tableBody {
+.tablewrap__body {
     background-color: #A8A8FF;
     height: 100%
 }
-.tableFooter {
+.table-wrap__footer {
     background-color:#8055FF;
     height: 3rem;
 }
