@@ -38,7 +38,7 @@ svg {
 }
 .wrapper-content {
     border-color: var(--background-admin-panel-day-light);
-    min-width: 94rem;
+    max-width: 94rem;
 }
 .header {
     display: flex;
